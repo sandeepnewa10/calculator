@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3 rem;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #C4C4C4;
+  padding: 40px;
+  overflow: hidden;
+}
+.wrapper .number {
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "result result result result" "clear zero divide multiply" "seven eight nine subtract" "four five six addition" "one two three answer";
+}
+.wrapper .number button,
+.wrapper .number input {
+  padding: 20px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  border: 1px solid #C4C4C4;
+  border-radius: 4px;
+}
+.wrapper .number__result {
+  grid-area: result;
+  text-align: right !important;
+}
+.wrapper .number__clear {
+  grid-area: clear;
+}
+.wrapper .number__zero {
+  grid-area: zero;
+}
+.wrapper .number__divide {
+  grid-area: divide;
+}
+.wrapper .number__multiply {
+  grid-area: multiply;
+}
+.wrapper .number__seven {
+  grid-area: seven;
+}
+.wrapper .number__eight {
+  grid-area: eight;
+}
+.wrapper .number__nine {
+  grid-area: nine;
+}
+.wrapper .number__subtract {
+  grid-area: subtract;
+}
+.wrapper .number__four {
+  grid-area: four;
+}
+.wrapper .number__five {
+  grid-area: five;
+}
+.wrapper .number__six {
+  grid-area: six;
+}
+.wrapper .number__addition {
+  grid-area: addition;
+}
+.wrapper .number__one {
+  grid-area: one;
+}
+.wrapper .number__two {
+  grid-area: two;
+}
+.wrapper .number__three {
+  grid-area: three;
+}
+.wrapper .number__answer {
+  grid-area: answer;
+}
+
+/*# sourceMappingURL=style.css.map */

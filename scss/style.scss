@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3 rem;
+}
+
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #C4C4C4;
+    padding: 40px;
+    overflow: hidden;
+
+    .number {
+        display: grid;
+        grid-gap: 1rem;
+        grid-auto-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "result result result result"
+            "clear zero divide multiply"
+            "seven eight nine subtract"
+            "four five six addition"
+            "one two three answer";
+
+        button,
+        input {
+            padding: 20px;
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.5rem;
+            border: 1px solid #C4C4C4;
+            border-radius: 4px;
+        }
+
+        &__result {
+            grid-area: result;
+            text-align: right !important;
+        }
+
+        &__clear {
+            grid-area: clear;
+
+        }
+
+        &__zero {
+            grid-area: zero;
+        }
+
+        &__divide {
+            grid-area: divide;
+
+        }
+
+        &__multiply {
+            grid-area: multiply;
+        }
+
+        &__seven {
+            grid-area: seven;
+        }
+
+        &__eight {
+            grid-area: eight;
+        }
+
+        &__nine {
+            grid-area: nine;
+        }
+
+        &__subtract {
+            grid-area: subtract;
+        }
+
+        &__four {
+            grid-area: four;
+        }
+
+        &__five {
+            grid-area: five;
+        }
+
+        &__six {
+            grid-area: six;
+        }
+
+        &__addition {
+            grid-area: addition;
+        }
+
+        &__one {
+            grid-area: one;
+        }
+
+        &__two {
+            grid-area: two;
+        }
+
+        &__three {
+            grid-area: three;
+        }
+
+        &__answer {
+            grid-area: answer;
+        }
+
+
+    }
+
+}
