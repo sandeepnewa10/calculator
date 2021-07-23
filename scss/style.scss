@@ -35,6 +35,30 @@ body {
             font-size: 1.5rem;
             border: 1px solid #C4C4C4;
             border-radius: 4px;
+            -webkit-transition: background-color 1s ease-out;
+            -moz-transition: background-color 1s ease-out;
+            -o-transition: background-color 1s ease-out;
+            transition: background-color 1s ease-out;
+
+            box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+
+        }
+
+        button {
+            cursor: pointer;
+
+
+
+
+            &:hover {
+                background: #ccc;
+            }
         }
 
         &__result {
@@ -44,6 +68,12 @@ body {
 
         &__clear {
             grid-area: clear;
+            background: #7d2ae8;
+            color: #fff;
+
+            &:hover {
+                background: #7a7c88 !important;
+            }
 
         }
 
@@ -53,11 +83,23 @@ body {
 
         &__divide {
             grid-area: divide;
+            background: #7d2ae8;
+            color: #fff;
+
+            &:hover {
+                background: #7a7c88 !important;
+            }
 
         }
 
         &__multiply {
             grid-area: multiply;
+            background: #7d2ae8;
+            color: #fff;
+
+            &:hover {
+                background: #7a7c88 !important;
+            }
         }
 
         &__seven {
@@ -74,6 +116,12 @@ body {
 
         &__subtract {
             grid-area: subtract;
+            background: #7d2ae8;
+            color: #fff;
+
+            &:hover {
+                background: #7a7c88 !important;
+            }
         }
 
         &__four {
@@ -90,6 +138,12 @@ body {
 
         &__addition {
             grid-area: addition;
+            background: #7d2ae8;
+            color: #fff;
+
+            &:hover {
+                background: #7a7c88 !important;
+            }
         }
 
         &__one {
@@ -106,6 +160,12 @@ body {
 
         &__answer {
             grid-area: answer;
+            background: #7d2ae8;
+            color: #fff;
+
+            &:hover {
+                background: #7a7c88 !important;
+            }
         }
 
 
